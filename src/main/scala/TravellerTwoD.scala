@@ -22,8 +22,8 @@ object TravellerTwoD  extends  App {
    *  space complexity = the depth of the tree(visualize the recursive calls as tree)
    */
 
-    //O(2**(m+n)) time
-    //O(m+n) space
+    //O(2**(m+n - 1)) time
+    //O(m+n - 1) space
   def travellerBrute(m: Int, n: Int): Long = {
     if (m == 0 | n == 0 ) 0
     else if (m == 1 & n == 1) 1
@@ -34,7 +34,8 @@ object TravellerTwoD  extends  App {
   stash("0,0") = 0
   stash("1,0") = 0
   stash("1,1") = 1
-
+  //O(m * n) time
+  //O(m + n) space
   def travellerOptimize(m: Int, n: Int): Long = {
     val key = s"$m,$n"
     val reverseKey = s"$n,$m"
