@@ -1,0 +1,11 @@
+#About solving dynamic programmings
+## with memoization
+1. Make it work
+* visualize the problem as a tree
+* implement tree using recursion
+* test it
+
+2. make it efficient
+* add a memo object
+* add a base case to return memo objects
+* store return values into memo object
