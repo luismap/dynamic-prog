@@ -2,6 +2,10 @@
 ## with memoization
 1. Make it work
 * visualize the problem as a tree
+* think about worst case scenario, how it looks like
+(ex. in can sum, worst scenario is to substract -1 in each step)
+* find the height of the tree and the branching factor
+(ex. in fib, height = n and branching= 2)
 * implement tree using recursion
 * test it
 
