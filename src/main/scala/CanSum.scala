@@ -18,7 +18,7 @@ object CanSum extends App {
   //m=target sum (assuming worst case scenario of -1)
   //m will be the depth of the tree
   //n=size of array
-  //O(n*m) time
+  //O(n^m) time
   //O(m) space
   def canSum(array: Array[Int], target: Int): Boolean = {
     if (target == 0) true
@@ -38,7 +38,7 @@ object CanSum extends App {
   }
 
 
-  //O(m * n) time
+  //O(n * m) time
   //O(m) space
   def canSumOptimize(array: Array[Int], target: Int, cached: mutable.HashMap[Int, Boolean]): Boolean = {
     if (cached.contains(target)) cached(target)
