@@ -16,8 +16,8 @@ object CanConstruct extends App {
 
   //n = array size
   //m = target size/tree depth
-  //time: O(n^m)
-  //space: O(m)
+  //time: O((n^m) * m) las m because of array split
+  //space: O(m * m)
   def canConstruct(array: Array[String], target: String): Boolean = {
     var currentReturn = false
     target match {
