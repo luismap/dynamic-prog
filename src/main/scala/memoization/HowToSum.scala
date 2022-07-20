@@ -1,8 +1,8 @@
+package memoization
+
 import org.apache.log4j.Logger
 
-import java.lang.annotation.Target
 import scala.collection.mutable
-import scala.collection.mutable.ListBuffer
 
 object HowToSum extends App {
 
@@ -100,7 +100,7 @@ object HowToSum extends App {
           }
         }
         if (canLog) logger.info(s"[currentlevel] target = $target edges = ${ans.toList}")
-        if(canLog)logger.info(s"[cache] $cache")
+        if (canLog) logger.info(s"[cache] $cache")
         cache.getOrElse(target, null)
       }
 
@@ -111,13 +111,11 @@ object HowToSum extends App {
     (Array(1, 1), 3),
     (Array(2, 3), 7),
     (Array(5, 3, 4, 7), 7)
-    ,(Array(2, 4), 7),
+    , (Array(2, 4), 7),
     (Array(2, 3, 5), 8)
     , (Array(7, 14), 300)
     //,(Array(10, 14), 300)
   )
-
-  import Utils.timer
 
   testSuite.foreach {
     case (data, target) =>

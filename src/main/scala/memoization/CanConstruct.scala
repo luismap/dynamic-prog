@@ -1,3 +1,5 @@
+package memoization
+
 import org.apache.log4j.Logger
 
 import scala.collection.mutable
@@ -65,8 +67,6 @@ object CanConstruct extends App {
     (Array("bo", "rd", "ate", "t", "ska", "sk", "boar"), "skateboard"),
     (Array("e", "ee", "eee", "eeee", "eeeee", "eeeeeee"), "eeeeeeeeeeeeeeeeeeeeeeeeeeeeef")
   )
-
-  import Utils.timer
 
   testSuite.foreach {
     case (data, target) =>

@@ -1,3 +1,5 @@
+package memoization
+
 import org.apache.log4j.Logger
 
 import scala.collection.mutable
@@ -49,7 +51,7 @@ object CanSum extends App {
         val newTarget = target - e
         if (newTarget >= 0)
           if (canLog) logger.info(s"[new target] ${array.toList}, target: $newTarget ")
-          canSumOptimize(array, newTarget, cached)
+        canSumOptimize(array, newTarget, cached)
       }
       if (canLog) logger.info(s"[currentlevel] ${e.toList} for target: $target")
       if (e.contains(true)) {
@@ -66,10 +68,8 @@ object CanSum extends App {
     (Array(5, 3, 4, 7), 7),
     (Array(2, 4), 7),
     (Array(2, 3, 5), 8)
-   , (Array(7, 14), 300)
+    , (Array(7, 14), 300)
   )
-
-  import Utils.timer
 
   testSuite.foreach {
     case (data, target) =>

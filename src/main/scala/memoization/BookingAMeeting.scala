@@ -1,6 +1,6 @@
-import org.apache.log4j.Logger
+package memoization
 
-import scala.util.Sorting
+import org.apache.log4j.Logger
 
 object BookingAMeeting extends App {
 

@@ -1,7 +1,9 @@
+package memoization
+
 import org.apache.log4j.Logger
 
-import collection.mutable.ListBuffer
 import scala.collection.mutable
+import scala.collection.mutable.ListBuffer
 
 object AllConstruct extends App {
 
@@ -75,7 +77,7 @@ object AllConstruct extends App {
             }
           }
         }
-       cache.getOrElse(target,null)
+        cache.getOrElse(target, null)
     }
   }
 
@@ -89,8 +91,6 @@ object AllConstruct extends App {
     (Array("a", "p", "ent", "enter", "ot", "o", "t"), "enterapotentpot"),
     (Array("e", "ee", "eee", "eeee", "eeeee", "eeeeeee"), "eeeeeeeeeeeeeeeeeeeeeeeeeeeeef"),
   )
-
-  import Utils.timer
 
   testSuite.foreach {
     case (data, target) =>

@@ -1,5 +1,8 @@
+package memoization
+
 import org.apache.log4j.Logger
-import collection.mutable
+
+import scala.collection.mutable
 
 object CountConstruct extends App {
 
@@ -65,8 +68,6 @@ object CountConstruct extends App {
     (Array("a", "p", "ent", "enter", "ot", "o", "t"), "enterapotentpot"),
     (Array("e", "ee", "eee", "eeee", "eeeee", "eeeeeee"), "eeeeeeeeeeeeeeeeeeeeeeeeeeeeef"),
   )
-
-  import Utils.timer
 
   testSuite.foreach {
     case (data, target) =>

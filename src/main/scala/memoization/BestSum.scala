@@ -1,3 +1,4 @@
+package memoization
 
 import org.apache.log4j.Logger
 
@@ -132,8 +133,6 @@ object BestSum extends App {
     (Array(1, 4, 5), 8),
     //(Array(1, 2, 5, 25), 100),
   )
-
-  import Utils.timer
 
   testSuite.foreach {
     case (data, target) =>
