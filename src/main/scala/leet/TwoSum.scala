@@ -1,0 +1,5 @@
+package leet
+
+object TwoSum {
+
+}
