@@ -1,5 +1,6 @@
 package memoization
 
+import myutils.Utils.timer
 import org.apache.log4j.Logger
 
 import scala.collection.mutable

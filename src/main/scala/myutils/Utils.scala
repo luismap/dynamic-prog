@@ -1,3 +1,5 @@
+package myutils
+
 import org.apache.log4j.Logger
 
 object Utils {
